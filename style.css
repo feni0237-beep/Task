@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+/************************ Header section *******************/
+.image {
+    width: 100%;
+    height: 650px;
+    background-image: url(./images/simple-house.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.link {
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    padding: 10px;
+    margin: 17px;
+    bottom: 0;
+    right: 0;
+}
+
+.list a {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    margin: 10px;
+}
+
+.house {
+    display: flex;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    line-height: 25px;
+}
+
+#box {
+    background-color: white;
+    box-shadow: 6px 9px white;
+    margin: 10px;
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+/*          ***Hover***               */
+.list a:hover {
+    border-bottom: 1px solid white;
+}
+
+/* ***************main page************** */
+
+.main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#dsc {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+#dsc p {
+    color: #87858D;
+    margin: 10px;
+    line-height: 24px;
+}
+
+/* ***********Food section*********** */
+.food ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.pi {
+    border: 1px solid #145730;
+    margin: 10px;
+    padding: 10px 25px;
+    text-align: center;
+}
+
+.food {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pi {
+    border: 1px solid #145730;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #145730;
+    list-style-type: none;
+}
+
+#pi {
+    color: white;
+    background-color: #145730;
+}
+
+/* Hover except(pi) */
+.pi:hover:not(#pi) {
+    background-color: #145730;
+    color: white;
+}
+
+/* ******************Image section************** */
+
+.my-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+}
+
+.photo {
+    flex: 25%;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: inline-block;
+
+}
+
+.sub h3,h4 {
+    color: rgb(161, 218, 237);
+    display: inline-block;
+    line-height: 25px;
+}
+
+.sub p {
+    color: #87858d;
+    display: block;
+    line-height: 20px;
+}
+
+img {
+    width: 100%;
+}
+ 
+/* *************last section************** */
+
+.last {
+    display: flex;
+}
+
+.Avacado {
+    width: 100%;
+    padding: 10px;
+    flex: 30%;
+}
+
+.right h3 {
+    color: rgb(161, 218, 237);
+    padding-bottom: 10px;
+    padding-top: 19px;
+}
+
+.right {
+    flex: 70%;
+    line-height: 25px;
+}
+
+.right p {
+    color: #87858d;
+    width: 50%;
+}
+
+/* **********Button******** */
+
+button {
+    float: right;
+    padding: 6px 10px;
+    color: #87858d;
+    border: 1px solid #87858d;
+    background-color: white;
+}
+
+/* ************Footer*********** */
+footer {
+    bottom: 0;
+    margin: 10px;
+    text-align: center;
+    color: #87858d;
+}
+
+/* ****************Responsive for mobile**************** */
+
+@media screen and (max-width:426px) {
+    .link {
+        flex-direction: column;
+    }
+
+    .my-container {
+        flex-direction: column;
+    }
+
+    .last {
+        flex-direction: column;
+    }
+
+    .right p {
+        font-size: 14px;
+        line-height: 18px;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .button {
+        padding: 6px 7px;
+    }
+
+    .food ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* *****************Responsive for tablates******************* */
+
+@media screen and (max-width:768px) {
+    .photo {
+        flex: 40%;
+    }
+    .right {
+        padding: 10px;
+        line-height: 18px;
+    }
+    .Avacado {
+        padding: 6px;
+    }
+    .right h3 {
+        padding-bottom: 5px;
+        padding-top: 0px;
+    }
+    .right p {
+        font-size: 12px;
+    }
+}
